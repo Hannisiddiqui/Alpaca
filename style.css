@@ -1,65 +1,18 @@
 /* Custom properties/variables  */
 :root {
-    --main-white: #f0f0f0;
-    --main-red: #000000;
-    --main-blue: #45567d;
-    --main-gray: #303841;
+    --primary-color: rgb(1, 27, 75);
+    --background-color: rgb(238, 237, 237);
+    --secondary-color: rgb(36, 80, 156);
   }
-
-  /* Base reset */
-* {
-    margin: 0;
-    padding: 0;
-  }
-
-  /* box-sizing and font sizing */
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
-html {
-    box-sizing: border-box;
-    /* Set font size for easy rem calculations
-     * default document font size = 16px, 1rem = 16px, 100% = 16px
-     * (100% / 16px) * 10 = 62.5%, 1rem = 10px, 62.5% = 10px
-    */
-    font-size: 62.5%;
-    scroll-behavior: smooth;
-}
-
-@media (max-width: 75em) {
-    html {
-      font-size: 60%;
-    }
-  }
-  
-  /* 980px / 16px = 61.25em */
-  @media (max-width: 61.25em) {
-    html {
-      font-size: 58%;
-    }
-  }
-  
-  /* 460px / 16px = 28.75em */
-  @media (max-width: 28.75em) {
-    html {
-      font-size: 55%;
-    }
-  }
-
+ 
   body {
     font-family: 'Poppins', sans-serif;
-    font-size: 1.8rem; /* 18px */
-    font-weight: 400;
-    line-height: 1.4;
-    color: var(--main-white);
-  }
+    background: var(--background-color);
+    padding: 2.5em;
+  } 
 
   /* nav */
-
-.main-navbar {
+main-navbar {
     display: flex;
     justify-content: flex-end;
     position: fixed;
@@ -76,17 +29,11 @@ html {
     margin-right: 2rem;
   }
   
-  @media (max-width: 28.75em) {
-    .nav {
-      justify-content: center;
-    }
-  
-    .nav-list {
+  /* .nav-list {
       margin: 0 1rem;
     }
-  }
-  
-  .nav-list a {
+   */
+  /* .nav-list a{
     display: block;
     font-size: 2.2rem;
     padding: 2rem;
@@ -96,9 +43,93 @@ html {
   
   .nav-list a:hover {
     background: var(--main-blue);
-  }
+  } */
 
   ul.nav-list{
     list-style-type: none;
   }
+
+  h1 {
+    text-transform: uppercase;
+    color: var(--primary-color);
+    font-size: 3rem;
+  }
   
+  h2 {
+    text-transform: uppercase;
+    color: var(--primary-color);
+  }
+
+  .alpaca{
+    position: relative;
+  }
+
+  .alpaca-background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  .alpaca-neck{
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  .alpaca-eyes{
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  .alpaca-hair{
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  .alpaca-mouth{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 100;
+  }
+
+  .alpaca-accessories{
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  .alpaca-leg{
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  .alpaca-nose{
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  .customizer {
+    padding-left: 3em;
+  }
+
+  .category {
+    padding: 10px 0px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .category-items{
+    background-color: #fff;
+    color: var(--secondary-color);
+    padding: 20px 30px;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 1.3rem;
+    min-width: 25%;
+  }
