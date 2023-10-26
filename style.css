@@ -1,53 +1,15 @@
-/* Custom properties/variables  */
-:root {
-    --primary-color: rgb(1, 27, 75);
-    --background-color: rgb(238, 237, 237);
-    --secondary-color: rgb(36, 80, 156);
-  }
- 
   body {
     font-family: 'Poppins', sans-serif;
     background: var(--background-color);
     padding: 2.5em;
   } 
 
-  /* nav */
-main-navbar {
-    display: flex;
-    justify-content: flex-end;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: var(--main-red);
-    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
-    z-index: 10;
+  :root {
+    --primary-color: rgb(1, 27, 75);
+    --background-color: rgb(238, 237, 237);
+    --secondary-color: rgb(36, 80, 156);
   }
-  
-  .nav-list {
-    display: flex;
-    margin-right: 2rem;
-  }
-  
-  /* .nav-list {
-      margin: 0 1rem;
-    }
-   */
-  /* .nav-list a{
-    display: block;
-    font-size: 2.2rem;
-    padding: 2rem;
-    color: white;
-    text-decoration: none;
-  }
-  
-  .nav-list a:hover {
-    background: var(--main-blue);
-  } */
 
-  ul.nav-list{
-    list-style-type: none;
-  }
 
   h1 {
     text-transform: uppercase;
@@ -75,18 +37,21 @@ main-navbar {
     position: absolute;
     left: 0;
     top: 0;
+    z-index: 100;
   }
 
   .alpaca-eyes{
     position: absolute;
     left: 0;
     top: 0;
+    z-index: 100;
   }
 
   .alpaca-hair{
     position: absolute;
     left: 0;
     top: 0;
+    z-index: 100;
   }
 
   .alpaca-mouth{
@@ -100,18 +65,21 @@ main-navbar {
     position: absolute;
     left: 0;
     top: 0;
+    z-index: 100;
   }
 
   .alpaca-leg{
     position: absolute;
     left: 0;
     top: 0;
+    z-index: 100;
   }
 
   .alpaca-nose{
     position: absolute;
     left: 0;
     top: 0;
+    z-index: 100;
   }
 
   .customizer {
@@ -132,4 +100,69 @@ main-navbar {
     text-align: center;
     font-size: 1.3rem;
     min-width: 25%;
+    margin: 10px 0px;
+    margin-right: 10px;
+    text-transform: capitalize;
+  }
+
+  .category-items:hover{
+    background-color: var(--primary-color);
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .category-item.xl{
+    width: 40%;
+  }
+
+  .category-item.active{
+    background-color: var(--secondary-color);
+    color: #fff;
+  }
+
+  .menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .menu-button{
+    padding: 10px 10px;
+    width: 12em;
+    margin-right: 1em;
+    margin-top: 10px;
+    background-color: #fff;
+    border: none;
+    font-weight: bold;
+  }
+
+  .menu-button:hover{
+    background-color: rgba(251, 249, 249, 0.856);
+    cursor: pointer;
+  }
+
+  .social-link{
+    margin-left: 15px;
+    text-decoration: none;
+    height: 32px;
+  }
+
+  .social-link_img{
+    height: 32px;
+  }
+
+  .flex{
+    display: flex;
+  }
+
+  .flex.jsbetween{
+    justify-content: space-between;
+  }
+
+  .flex.jscenter {
+    justify-content: center;
+  }
+
+  .flex.acenter{
+    align-items: center;
   }
